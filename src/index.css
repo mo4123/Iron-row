@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-button: 'Poppins', sans-serif;
+  }
+
+  body {
+    background-color: #131313;
+    color: #e5e2e1;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  button, .font-button {
+    font-family: var(--font-button);
+  }
+}
+
+.glass-card {
+  background: rgba(27, 27, 27, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.glass-panel {
+  background: rgba(27, 27, 27, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+}
+
+.glow-gold:hover {
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.45);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f2ca50 0%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-ease {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(19, 19, 19, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
